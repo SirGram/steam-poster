@@ -43,6 +43,10 @@ def save_image():
     box = (window.winfo_rootx(), window.winfo_rooty(), window.winfo_rootx() + window.winfo_width(),
            window.winfo_rooty() + window.winfo_height())
     screenshot = ImageGrab.grab(bbox=box)
+    #Creates COLLAGE dir
+    dir = os.path.join("./", "COLLAGE")
+    if not os.path.exists(dir):
+        os.mkdir(dir)
     screenshot.save(f"./COLLAGE/{random.randrange(1000)}.png")
 # Append to list of coordinates
 def append_coord(i, j, type):

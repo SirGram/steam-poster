@@ -2,6 +2,7 @@ from steamgrid import SteamGridDB,MimeType,StyleType
 import requests
 import random
 import threading
+import os
 
 #API Key
 sgdb = SteamGridDB('a180935d7445430074b645cf3d5097ee')
@@ -11,6 +12,16 @@ with open("list_of_games.txt","r") as f:
     lines=f.readlines()
     for line in lines:
         game_list.append(line.strip())
+
+#Creates STEAMIMAGES folders
+dir = os.path.join("./", "STEAMIMAGES")
+if not os.path.exists(dir):
+    os.mkdir(dir)
+sizes=["920x430","600x900","1024x1024"]
+for size in sizes:
+    subdir=os.path.join("./STEAMIMAGES", size)
+    if not os.path.exists(subdir):
+        os.mkdir(subdir)
 
 
 number_of_images=0
