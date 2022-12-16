@@ -17,7 +17,7 @@ Screenshot of grid saved in ./COLLAGE
 
 Parameter		     |  Default Value  | Action					
 
-RESIZE 				True		Downloaded images to be resized from orignial width and height.
+RESIZE 			      	True		Downloaded images to be resized from orignial width and height.
 DELETE_IMAGES 			True		Delete images from 3 root folders after making grid.
 GENERATE_LABEL  		False		Creates label on top of IMAGE canvas to indicate coordinate.
 FULLSCREEN_WINDOW  		False		Makes tkinter root Fullscreen.
