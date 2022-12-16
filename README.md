@@ -3,6 +3,10 @@ Creates a random grid of game banners
 
 ----------------------------------------------------------------
 
+pip install python-steamgriddb
+| :---:   | 
+----------------------------------------------------------------
+
 Include games you wish to search for inside list_of_games.txt
 
 ----------------------------------------------------------------
