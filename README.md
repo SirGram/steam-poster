@@ -11,6 +11,12 @@ Include games you wish to search for inside list_of_games.txt
 
 ----------------------------------------------------------------
 
+
+api_key
+| :---:   | 
+
+https://www.steamgriddb.com/profile/preferences/api
+
 Execute steam.py for searching images in STEAMGRIDDB
 Images are saved within ./STEAMIMAGES
 
