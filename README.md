@@ -1,6 +1,7 @@
 # game_grid_generator
 Creates a random grid of game banners
 ![alt text](https://raw.githubusercontent.com/SirGram/game_grid_generator/main/example.png)
+
 ----------------------------------------------------------------
 
 Include games you wish to search for inside __list_of_games.txt__
