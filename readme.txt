@@ -10,6 +10,7 @@ Images are saved within ./STEAMIMAGES
 ----------------------------------------------------------------
 
 Execute main.py for making a grid window using ./STEAMIMAGES
+
 Screenshot of grid saved in ./COLLAGE
 
 Parameter		     |  Default Value  | Action					
