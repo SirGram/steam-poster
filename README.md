@@ -3,26 +3,25 @@ Creates a random grid of game banners
 
 ----------------------------------------------------------------
 
+Include games you wish to search for inside __list_of_games.txt__
+
+----------------------------------------------------------------
+
 pip install python-steamgriddb
 | :---:   | 
-----------------------------------------------------------------
-
-Include games you wish to search for inside list_of_games.txt
-
-----------------------------------------------------------------
-
 
 api_key
 | :---:   | 
 
 https://www.steamgriddb.com/profile/preferences/api
 
-Execute steam.py for searching images in STEAMGRIDDB
+Execute __steam.py__ for searching images in STEAMGRIDDB
+
 Images are saved within ./STEAMIMAGES
 
 ----------------------------------------------------------------
 
-Execute main.py for making a grid window using ./STEAMIMAGES
+Execute __main.py__ for making a grid window using ./STEAMIMAGES
 Screenshot of grid saved in ./COLLAGE
 
 
