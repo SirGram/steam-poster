@@ -4,8 +4,10 @@ import random
 import threading
 import os
 
-#API Key
-sgdb = SteamGridDB('a180935d7445430074b645cf3d5097ee')
+#API Key from SteamGrid
+# https://www.steamgriddb.com/profile/preferences/api
+api_key=""
+sgdb = SteamGridDB(api_key)
 
 game_list=[]
 with open("list_of_games.txt","r") as f:
