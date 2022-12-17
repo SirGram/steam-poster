@@ -31,7 +31,7 @@ Screenshot of grid saved in ./COLLAGE
 
 Parameter		    						 |  Default Value | Action|Category
 | :---:   | :---: | :---: | :---: |
-RESIZE 	|		      							True		|						Downloaded images to be resized from orignial width and height.|	steam.py
+RESIZE 	|		      							True		|						Downloaded images to be resized from original width and height.|	steam.py
 DELETE_IMAGES |									True	|							Delete images from 3 root folders after making grid.|	steam.py
 GENERATE_LABEL | 								False	|							Creates label on top of IMAGE canvas to indicate coordinate.|	steam.py
 FULLSCREEN_WINDOW  		|					False	|							Makes tkinter root Fullscreen.|	steam.py
