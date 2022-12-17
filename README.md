@@ -4,41 +4,45 @@ Creates a random grid of game banners.
 
 ----------------------------------------------------------------
 
-Include games you wish to search for inside __list_of_games.txt__
+Include games you wish to search for inside _list_of_games.txt_
+
+Change parameters and API_KEY in __parameters.json__
 
 ----------------------------------------------------------------
 
 pip install python-steamgriddb
 | :---:   | 
 
-api_key
+API_KEY
 | :---:   | 
 
-https://www.steamgriddb.com/profile/preferences/api
+Generate at _https://www.steamgriddb.com/profile/preferences/api_
 
-Execute __steam.py__ for searching images in STEAMGRIDDB
-
-Images are saved within ./STEAMIMAGES
 
 ----------------------------------------------------------------
 
-Execute __main.py__ for making a grid window using ./STEAMIMAGES
+Run __main.py__ 
+
+__steam.py__ is subrun. Images saved within ./STEAMIMAGES
+
 Screenshot of grid saved in ./COLLAGE
 
+----------------------------------------------------------------
 
-
-Parameter		    						 |  Default Value | Action
-| :---:   | :---: | :---: |
-RESIZE 	|		      							True		|						Downloaded images to be resized from orignial width and height.
-DELETE_IMAGES |									True	|							Delete images from 3 root folders after making grid.
-GENERATE_LABEL | 								False	|							Creates label on top of IMAGE canvas to indicate coordinate.
-FULLSCREEN_WINDOW  		|					False	|							Makes tkinter root Fullscreen.
-CLOSE_WINDOW_AFTER_SEARCH	|			False	|							Quits window after 2s of showing the grid.
-ROW_SIZE				|								5			|							Indicates row length.
-COLUMN_SIZE 			|							5			|							Indicates column length.
-GRID_SIZE_IN_PIXELS 	|					100			|						Indicates width and height of image canvas resizing in pixels.
-PADDING								|					2			|							Indicates window padding in pixels.
-PADDING_BETWEEN_CELLS 	|				2			|							Indicates cell padding in pixels.
-BACKGROUND_COLOR 					|	 	 "white"	|						Indicates window background color.
+Parameter		    						 |  Default Value | Action|Category
+| :---:   | :---: | :---: | :---: |
+RESIZE 	|		      							True		|						Downloaded images to be resized from orignial width and height.|	steam.py
+DELETE_IMAGES |									True	|							Delete images from 3 root folders after making grid.|	steam.py
+GENERATE_LABEL | 								False	|							Creates label on top of IMAGE canvas to indicate coordinate.|	steam.py
+FULLSCREEN_WINDOW  		|					False	|							Makes tkinter root Fullscreen.|	steam.py
+CLOSE_WINDOW_AFTER_SEARCH	|			False	|							Quits window after 2s of showing the grid.|	steam.py
+ROW_SIZE				|								5			|							Indicates row length.|	steam.py
+COLUMN_SIZE 			|							5			|							Indicates column length.|	steam.py
+GRID_SIZE_IN_PIXELS 	|					100			|						Indicates width and height of image canvas resizing in pixels.|steam.py	
+PADDING								|					50			|							Indicates window padding in pixels.|	steam.py
+PADDING_BETWEEN_CELLS 	|				2			|							Indicates cell padding in pixels.|	steam.py
+BACKGROUND_COLOR 					|	 	 "white"	|						Indicates window background color.|	main.py
+MAX_IMAGES 					|	 	 300	|						Indicates amount of aprox images to download for picking randomly.|	main.py
+API_KEY 					|	 	 ""	|						Steamgriddb API_KEY.
 
 ----------------------------------------------------------------
