@@ -1,0 +1,19 @@
+{
+  "steam.py": {
+    "MAX_IMAGES": 300,
+    "API_KEY": ""
+  },
+  "main.py": {
+    "RESIZE" : true,
+    "DELETE_IMAGES" :true,
+    "GENERATE_LABEL"  : false,
+    "FULLSCREEN_WINDOW" : false,
+    "CLOSE_WINDOW_AFTER_SEARCH" : true,
+    "ROW_SIZE" : 5,
+    "COLUMN_SIZE" : 5,
+    "GRID_SIZE_IN_PIXELS" : 100,
+    "PADDING" : 50,
+    "PADDING_BETWEEN_CELLS" : 2,
+    "BACKGROUND_COLOR" : "white"
+  }
+}

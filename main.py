@@ -1,21 +1,35 @@
+import json
 from tkinter import *
 from canvas import CreateLabel
 import os
 import glob
 import random
 import PIL.ImageGrab as ImageGrab
+import steam
 
-RESIZE = True
-DELETE_IMAGES = True
-GENERATE_LABEL = False
-FULLSCREEN_WINDOW = False
-CLOSE_WINDOW_AFTER_SEARCH=False
-ROW_SIZE = 5
-COLUMN_SIZE = 5
-GRID_SIZE_IN_PIXELS = 100
-PADDING = 2
-PADDING_BETWEEN_CELLS = 2
-BACKGROUND_COLOR = "white"
+#Gets parameters
+with open("parameters.json") as f:
+    data=json.load(f)
+    g=data["main.py"]
+    h=data["steam.py"]
+
+    RESIZE = g["RESIZE"]
+    DELETE_IMAGES = g["RESIZE"]
+    GENERATE_LABEL = g["GENERATE_LABEL"]
+    FULLSCREEN_WINDOW = g["FULLSCREEN_WINDOW"]
+    CLOSE_WINDOW_AFTER_SEARCH=g["CLOSE_WINDOW_AFTER_SEARCH"]
+    ROW_SIZE = g["ROW_SIZE"]
+    COLUMN_SIZE = g["COLUMN_SIZE"]
+    GRID_SIZE_IN_PIXELS = g["GRID_SIZE_IN_PIXELS"]
+    PADDING = g["PADDING"]
+    PADDING_BETWEEN_CELLS = g["PADDING_BETWEEN_CELLS"]
+    BACKGROUND_COLOR = g["BACKGROUND_COLOR"]
+
+    steam.MAX_IMAGES=h["MAX_IMAGES"]
+    steam.API_KEY = h["API_KEY"]
+
+#Run steam.py:
+steam.main()
 
 path_list = ["./STEAMIMAGES/1024x1024", "./STEAMIMAGES/920x430", "./STEAMIMAGES/600x900"]
 image_list_1024x1024 = list(glob.glob(os.path.join(path_list[0], '*.*')))

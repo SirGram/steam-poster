@@ -4,10 +4,14 @@ import random
 import threading
 import os
 
+
 #API Key from SteamGrid
 # https://www.steamgriddb.com/profile/preferences/api
-api_key=""
-sgdb = SteamGridDB(api_key)
+API_KEY=""
+sgdb = SteamGridDB(API_KEY)
+
+number_of_images=0
+MAX_IMAGES=300
 
 game_list=[]
 with open("list_of_games.txt","r") as f:
@@ -26,8 +30,6 @@ for size in sizes:
         os.mkdir(subdir)
 
 
-number_of_images=0
-MAX_IMAGES=300
 
 def worker():
     global number_of_images
@@ -66,15 +68,17 @@ def worker():
             number_of_images+=1
             print(f"Downloaded: {number_of_images} images")
 
+def main():
+    thread_list=[]
+    for i in range(50):
+        t=threading.Thread(target=worker)
+        thread_list.append(t)
+        t.start()
+    for i in thread_list:
+        t.join()
 
-thread_list=[]
-for i in range(50):
-    t=threading.Thread(target=worker)
-    thread_list.append(t)
-    t.start()
-for i in thread_list:
-    t.join()
-
+if __name__ == "__main__":
+    main()
 
 
 
