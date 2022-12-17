@@ -40,7 +40,7 @@ ROW_SIZE				|								5			|							Indicates row length.|	steam.py
 COLUMN_SIZE 			|							5			|							Indicates column length.|	steam.py
 GRID_SIZE_IN_PIXELS 	|					100			|						Indicates width and height of image canvas resizing in pixels.|steam.py	
 PADDING								|					50			|							Indicates window padding in pixels.|	steam.py
-PADDING_BETWEEN_CELLS 	|				2			|							Indicates cell padding in pixels.|	steam.py
+PADDING_BETWEEN_CELLS 	|				0			|							Indicates cell padding in pixels.|	steam.py
 BACKGROUND_COLOR 					|	 	 "white"	|						Indicates window background color.|	steam.py
 MAX_IMAGES 					|	 	 300	|						Indicates amount of aprox images to download for picking randomly.|	main.py
 API_KEY 					|	 	 ""	|						Steamgriddb API_KEY.|	main.py
