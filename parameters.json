@@ -11,7 +11,7 @@
     "CLOSE_WINDOW_AFTER_SEARCH" : true,
     "ROW_SIZE" : 5,
     "COLUMN_SIZE" : 5,
-    "GRID_SIZE_IN_PIXELS" : 100,
+    "GRID_SIZE_IN_PIXELS" : 128,
     "PADDING" : 50,
     "PADDING_BETWEEN_CELLS" : 0,
     "BACKGROUND_COLOR" : "white"
