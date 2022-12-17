@@ -40,7 +40,7 @@ FULLSCREEN_WINDOW  		|					False	|							Makes tkinter root Fullscreen.|	steam.p
 CLOSE_WINDOW_AFTER_SEARCH	|			False	|							Quits window after 2s of showing the grid.|	steam.py
 ROW_SIZE				|								5			|							Indicates row length.|	steam.py
 COLUMN_SIZE 			|							5			|							Indicates column length.|	steam.py
-GRID_SIZE_IN_PIXELS 	|					100			|						Indicates width and height of image canvas resizing in pixels.|steam.py	
+GRID_SIZE_IN_PIXELS 	|					128			|						Indicates width and height of image canvas resizing in pixels.|steam.py	
 PADDING								|					50			|							Indicates window padding in pixels.|	steam.py
 PADDING_BETWEEN_CELLS 	|				0			|							Indicates cell padding in pixels.|	steam.py
 BACKGROUND_COLOR 					|	 	 "white"	|						Indicates window background color.|	steam.py
